@@ -1,0 +1,278 @@
+<html>
+<head>
+<script language="JavaScript">
+
+ 
+
+var rep = new Array;
+
+var faite = new Array;
+
+var score = 0;
+ 
+ 
+
+
+ 
+ 
+
+rep[1] = "b";
+
+rep[2] = "c";
+
+rep[3] = "d";
+
+rep[4] = "b";
+
+rep[5] = "a";
+
+rep[6] = "d";
+
+rep[7] = "b";
+
+rep[8] = "a";
+
+rep[9] = "c";
+
+rep[10] = "d";
+ 
+
+
+function truc(){
+alert("c'est un point de vue");
+}
+
+function Engine(question, reponse) {
+
+        if (reponse != rep[question]) {
+
+                if (!faite[question]) {
+
+                        faite[question] = -1;
+
+                        alert("Faux !!   La bonne réponse était en - " + rep[question] + " -");
+
+                        }
+
+                else {
+
+                        alert("Tu as déjà répondu à cette question !");
+
+                        }
+
+                }
+
+        else {
+
+                if (!faite[question]) {
+
+                        faite[question] = -1;
+
+                        score++;
+
+                        alert("Bonne réponse !! ");
+
+                        }
+
+                else { 
+
+                        alert("Tu as déjà répondu à cette question !");
+
+                        }
+
+                }
+
+}
+
+
+
+function NextLevel () {
+
+        if (score > 10) {
+
+                alert("T'es Senku ou quoi la?");
+
+                }
+
+        if (score > 8 && score <= 10) {
+
+                alert(score + "/10. " + "Bien joué a 1 000 000 000 de %");
+
+                }
+
+        if (score > 6 && score <= 8) {
+
+                alert(score + "/10. " + "Pas mal mais travailles encore tes cours de chimies");
+
+                }
+ 
+ 
+
+        if (score >= 4 && score < 6) {
+
+                alert(score + "/10. " + "Pas ouf ouf en vrai on dirait Magma");
+
+                }
+
+        if (score < 4) {
+
+                alert(score + "/10. " + "Bah lis ou relis Dr.Stone");
+
+                }
+ 
+ 
+ 
+
+
+faite = new Array;
+
+score = 0;
+
+
+
+document.quest.reset();
+
+}
+ 
+ 
+ 
+ 
+
+
+</script>
+</head>
+<br><form name="quest">
+<p>Combien d'années Senku es resté pétifié ?
+<br><input type="radio" name="1" value="a" onclick="Engine(1, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">3752 ans.</font>
+<br><input type="radio" name="1" value="b" onclick="Engine(1, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">3719 ans.</font>
+<br><input type="radio" name="1" value="c" onclick="Engine(1, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">4256 ans.</font>
+<br><input type="radio" name="1" value="d" onclick="Engine(1, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">2689 ans.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Qui est le meilleur en maths ?
+<br><input type="radio" name="2" value="a" onclick="Engine(2, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Xeno.</font>
+<br><input type="radio" name="2" value="b" onclick="Engine(2, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Senku.</font>
+<br><input type="radio" name="2" value="c" onclick="Engine(2, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Saï.</font>
+<br><input type="radio" name="2" value="d" onclick="Engine(2, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Magma.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Quel matériaux permet de faire fonctionner "La Méduse" ?
+<br><input type="radio" name="3" value="a" onclick="Engine(3, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Du Tungstène.</font>
+<br><input type="radio" name="3" value="b" onclick="Engine(3, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Du Fer.</font>
+<br><input type="radio" name="3" value="c" onclick="Engine(3, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">La Pierre Soleil.</font>
+<br><input type="radio" name="3" value="d" onclick="Engine(3, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Du Diamant.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Comment s'appelle le robot de Byakuya dans le Spin-off ? 
+<br><input type="radio" name="4" value="a" onclick="Engine(4, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Mécha-Senku.</font>
+<br><input type="radio" name="4" value="b" onclick="Engine(4, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Rei.</font>
+<br><input type="radio" name="4" value="c" onclick="Engine(4, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Taki.</font>
+<br><input type="radio" name="4" value="d" onclick="Engine(4, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Steam Gorilla.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Que signifie "Ishigami" ?
+<br><input type="radio" name="5" value="a" onclick="Engine(5, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Dieu de la pierre.</font>
+<br><input type="radio" name="5" value="b" onclick="Engine(5, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Rien mdr.</font>
+<br><input type="radio" name="5" value="c" onclick="Engine(5, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Espace Illuminé.</font>
+<br><input type="radio" name="5" value="d" onclick="Engine(5, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Dépérification.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Combien d'animaux a Suika ?
+<br><input type="radio" name="6" value="a" onclick="Engine(6, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">1.</font>
+<br><input type="radio" name="6" value="b" onclick="Engine(6, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">2.</font>
+<br><input type="radio" name="6" value="c" onclick="Engine(6, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">8.</font>
+<br><input type="radio" name="6" value="d" onclick="Engine(6, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Beaucoup lol.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Qui est le créateur de Dr.Stone ?
+<br><input type="radio" name="7" value="a" onclick="Engine(7, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Boichi.</font>
+<br><input type="radio" name="7" value="b" onclick="Engine(7, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Riichirō Inagaki.</font>
+<br><input type="radio" name="7" value="c" onclick="Engine(7, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Gege Akutami.</font>
+<br><input type="radio" name="7" value="d" onclick="Engine(7, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Shigeru Miyamoto.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Quel est le Titre de l'op 3 ?
+<br><input type="radio" name="8" value="a" onclick="Engine(8, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Rakuen.</font>
+<br><input type="radio" name="8" value="b" onclick="Engine(8, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Koe?.</font>
+<br><input type="radio" name="8" value="c" onclick="Engine(8, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">LIFE.</font>
+<br><input type="radio" name="8" value="d" onclick="Engine(8, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Kaibutsu.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Où se situe l'endroit qui à été pétrifié en premier ?
+<br><input type="radio" name="9" value="a" onclick="Engine(9, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Europe.</font>
+<br><input type="radio" name="9" value="b" onclick="Engine(9, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Asie.</font>
+<br><input type="radio" name="9" value="c" onclick="Engine(9, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Amérique du Sud.</font>
+<br><input type="radio" name="9" value="d" onclick="Engine(9, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Amérique du Nord.</font>
+<br>&nbsp;
+<p></form>
+
+<br><form name="quest">
+<p>Quel est le meilleur perso de Dr.Stone?
+<br><input type="radio" name="10" value="a" onclick="Engine(10, this.value)"><font color="#FF0000">a.
+</font><font color="#330033">Manle.</font>
+<br><input type="radio" name="10" value="b" onclick="Engine(10, this.value)"><font color="#FF0000">b.
+</font><font color="#330033">Luffy.</font>
+<br><input type="radio" name="10" value="c" onclick="Engine(10, this.value)"><font color="#FF0000">c.
+</font><font color="#330033">Ibara.</font>
+<br><input type="radio" name="10" value="d" onclick="Engine(10, this.value)"><font color="#FF0000">d.
+</font><font color="#330033">Senku.</font>
+<br>&nbsp;
+<p><input type="button" name="Resultats" value="Résultats" onclick="NextLevel()">
+<br>&nbsp;
+<p></form>
+
+
+</body>
+</html>
