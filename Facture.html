@@ -1,0 +1,246 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Facture</title>
+	<link rel="stylesheet" type="text/css" href="Stylefacture.css">
+	<script type="text/javascript" src="java1.js"></script>
+</head>
+
+<body>
+	<div class="page">
+	
+		<div class="entete">
+
+			
+			<img src="E.jpg" width="90px" height="90px" class="logo">
+			
+			<div class="info1"
+			style="text-align: left;">
+			
+			<li><input   type="entrez" name="date" id="date" placeholder="< Entreprise Nzo >" class="date"></li>
+
+			<li><input   type="entrez" name="date" id="date" placeholder="< 86 Avenue Jean Jaurès >" class="date"></li>
+			<br>	
+
+			<li><input   type="entrez" name="date" id="date" placeholder="< Détails du contact >" class="date"></li>
+
+			</div>
+
+			
+
+			<div class="info2">
+
+			<h2>FACTURE</h2>
+			<br>
+			<input style="border-bottom: 1px solid black;"name="date" id="date1" placeholder="Date" class="numerFact">
+			<br><br>
+			<input style="border-bottom: 1px solid black; width: 138px; " type="numerFact" name="numerFact" id="numerFact" placeholder="N° de facture" class="numerFact">
+		
+				
+			</div>
+	     </div>
+
+
+
+
+
+
+
+
+		<div class="section1">
+
+			<span class="cond" ></span>
+
+			<div class="dest">	
+			
+			<h3>Destinataire:</h3>
+			
+				<li><input type="text" name="nom" placeholder="Nom" value=""></li>
+
+				<li><input type="text" name="societe" placeholder="Nom de la société" value=""></li>
+
+				<li><input type="text" name="adresse"placeholder="Adresse postale" value=""></li>
+
+				<li><input type="text" name="tel" placeholder="Téléphone" value=""></li>
+
+				<li><input type="text" name="email" placeholder="Email"value=""></li>
+			
+			</div>
+			
+			<div class="env">
+			
+			<h3>Envoyez à:</h3>
+
+				<li><input type="text" name="nom" placeholder="Nom" value=""></li>
+
+				<li><input type="text" name="societe" placeholder="Nom de la société" value=""></li>
+
+				<li><input type="text" name="adresse"placeholder="Adresse postale" value=""></li>
+
+				<li><input type="text" name="tel" placeholder="Téléphone" value=""></li>
+
+				<li><input type="text" name="email" placeholder="Email" value=""></li>
+			
+			</div>
+			
+		
+
+
+
+<div class="tableau">
+
+	<form>
+
+	<table class="tableau1" >
+
+		<tr  style="background-color: #780EF0; color: whitesmoke; text-align: center;" >
+			<td width="250px">DESCRIPTION</td>
+			<td>QUANTITÉ </td>
+			<td>PRIX UNITAIRE</td>
+			<td>TOTAL</td>
+		</tr>
+
+
+
+		<tr>
+			<td><input  type="text" name="d1" ></td>
+			<td><input  type="text"name="q1" id="q1"></td>
+			<td><input  type="text"name="p1" id="p1"></td>
+			<td><input class="total" id="t1" name="t1" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input type="text" class="gris" name="d2"></td>
+			<td><input type="text" class="gris" name="q2" id="q2"></td>
+			<td><input type="text" class="gris" name="p2" id="p2"></td>
+			<td><input style="background-color:#DEDEDE;" class="total" id="t2" name="t2" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input type="text"  name="d3"></td>
+			<td><input type="text" name="q3" id="q3"></td>
+			<td><input type="text" name="p3" id="p3"></td>
+			<td><input class="total" id="t3" name="t3" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input class="gris" type="text"  name="d4"></td>
+			<td><input class="gris" type="text" name="q4" id="q4"></td>
+			<td><input class="gris" type="text" name="p4"id="p4"></td>
+			<td><input  style="background-color:#DEDEDE;" class="total" id="t4" name="t4" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input type="text" name="d5"></td>
+			<td><input type="text"name="q5" id="q5"></td>
+			<td><input type="text"name="p5" id="p5"></td>
+			<td><input class="total" id="t5" name="t5" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input class="gris" type="text" name="d6"></td>
+			<td><input class="gris" type="text"name="q6" id="q6"></td>
+			<td><input class="gris" type="text"name="p6" id="p6"></td>
+			<td><input style="background-color: #DEDEDE;"  class="total" id="t6" name="t6" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input type="text" name="d7"></td>
+			<td><input type="text"name="q7" id="q7"></td>
+			<td><input type="text"name="p7" id="p7"></td>
+			<td><input class="total" id="t7" name="t7" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input class="gris" type="text" name="d8"></td>
+			<td><input class="gris" type="text"name="q8" id="q8"></td>
+			<td><input class="gris" type="text"name="p8" id="p8"></td>
+			<td><input style="background-color:#DEDEDE;" class="total" id="t8" name="t8" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input type="text" name="d9"></td>
+			<td><input type="text"name="q9" id="q9"></td>
+			<td><input type="text"name="p9"  id="p9"></td>
+			<td><input class="total" id="t9" name="t9" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+		<tr class="ligne">
+			<td><input style="border-bottom:1px solid gray;" class="gris" type="text" name="d10"></td>
+			<td><input style="border-bottom:1px solid gray;" class="gris" type="text"name="q10" id="q10"></td>
+			<td><input style="border-bottom:1px solid gray;" class="gris" type="text"name="p10" placeholder="" id="p10"></td>
+			<td><input style="background-color:#DEDEDE; border-bottom:1px solid gray;"  class="total" id="t10" name="t10" placeholder="0.00" type="text" readonly=readonly></td>
+		</tr>
+
+
+
+
+		
+		<table class="calcul" >
+		<tr>
+			<span class="remarques">   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;Remarques, notes et instructions de paiement:</span>
+						<td></td>
+						<td></td>
+						<td>SOUS-TOTAL</td>
+						<td><input type="text" name="soustot" id="soustot" placeholder ="0.00" readonly=readonly></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>REMISE</td>
+						<td><input type="text" name="remise" id="remise" placeholder ="0.00" ></td>
+					</tr>
+					<tr >
+						<td></td>
+						<td></td>
+						<td>SOUS-TOTAL MOINS LES REMISES</td>
+						<td><input type="text" name="soustotmoinsrem" id="soustotmoinsrem" placeholder ="0.00" readonly=readonly></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>TAUX D'IMPOSITION</td>
+						<td><input type="text" name="tximp" id="tximp" placeholder ="0.00"></td> 
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>TAXE TOTALE</td>
+						<td><input type="text" name="txtot" id="txtot" placeholder ="0.00" readonly=readonly></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>EXPEDITION, MANUTENTION</td>
+						<td><input type="text" name="expMan" id="expMan" placeholder ="0.00"></td>
+					</tr>
+				</table>
+
+				<table class="solde">
+					<tr><br></tr>
+					<tr class="calcul2">
+						<td>SOLDE DU:</td>
+						<td><input style="font-size: 20px"type="text" name="solde" id="solde" placeholder ="0.00" readonly=readonly></td>
+					</tr>
+
+					
+				</table>
+			</div>
+			<div class="buttons">
+			<input class="button" type="button" name="Calculer" onclick="calculate()" value="Calculer">
+			<input class="button" type="reset" value="Réinitialiser" id="reset">
+
+			
+			
+			<input class="button" type="button" name="Code Source" value="Code Source" onclick="access()">
+			</div>
+
+		</table>
+		</form>
+		
+		</div>
+
+
+			
+</body>
+</html>
